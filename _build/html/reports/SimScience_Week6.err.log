@@ -1,0 +1,59 @@
+Traceback (most recent call last):
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/nbclient/client.py", line 1305, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/Users/Ziad/miniforge3/lib/python3.9/asyncio/base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/nbclient/client.py", line 705, in async_execute
+    await self.async_execute_cell(
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Users/Ziad/miniforge3/lib/python3.9/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+### EDIT THIS ###
+# Turn the code below into a function so that you can run it multiple times
+# Determine which input parameters your function needs based on the code you already have and the variables that code uses
+
+...
+    # Create array to store all people and matrices to store coordinates and statuses
+    people = []
+    ppl_coords = np.zeros((timesteps, num_people, 2))
+    ppl_colors = np.zeros((timesteps, num_people))
+
+    for i in range(num_people):
+        # Define x and y coordinates and angle of movement
+        x = np.random.random()*(x_bounds[1]-x_bounds[0]) + x_bounds[0]
+        y = np.random.random()*(y_bounds[1]-y_bounds[0]) + y_bounds[0]
+        angle = np.random.random()*360
+
+        # Create your person, then set their bounds, then set their direction
+        human = Person(x, y, speed, dt)
+        human.set_bounds(x_bounds, y_bounds)
+        human.set_direction(angle)
+
+        # Set your person's initial infection status using the infection probability constant
+        human.set_initial_status(init_prob)
+
+        # Initialize your person's infection variables
+        human.init_infection(radius, transmission_prob, duration)
+
+        # Add your person to your array of people
+        people.append(human)
+  
+    ### EDIT THIS ###
+    # Determine what variables your function needs to return
+    ...
+------------------
+
+
+[0;36m  Cell [0;32mIn[4], line 7[0;36m[0m
+[0;31m    people = [][0m
+[0m    ^[0m
+[0;31mIndentationError[0m[0;31m:[0m unexpected indent
+
+

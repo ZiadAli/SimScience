@@ -3,7 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  - caption: Example Files  
+    chapters:
+    - file: markdown
+      sections: 
+      - file: notebooks
+      - file: markdown-notebooks
+  - caption: Disease Modeling
+    chapters:
+    - file: SimScience_Week1.ipynb
+    - file: SimScience_Week6.ipynb
+      sections: 
+      - file: SimScience_Week6_Answers.ipynb
