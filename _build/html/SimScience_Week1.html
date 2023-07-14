@@ -380,7 +380,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="creating-people">
 <h1>Creating People<a class="headerlink" href="#creating-people" title="Permalink to this heading">#</a></h1>
-<p>Our first step in modeling the spread of a disease within a population is to create our simulated people. In real life, people are infinitely complex; they have personalities, goals, friends, family, etc., but when we model something, we try to reduce the complexity of that thing to the smallest number of variables necessary to replicate the phenomenon we are interested in.</p>
+<p>Our first step in modeling the spread of a disease within a population is to create our simulated people. In real life, people are infinitely complex; they have personalities, goals, friends, families, etc., but when we model something, we try to reduce the complexity of that thing down to the smallest number of variables necessary to replicate the phenomenon we are interested in.</p>
 <p>If we wanted to model how a person’s body moves while they run a 100m dash, our model would have to include a ton of variables. We would need to capture the bone structure of their body, their gait (way they move their legs), how fast their muscles contract and relax, and much more. This quickly becomes really complex, and people spend years working to make these kinds of models!</p>
 <figure class="align-default" id="markdown-fig">
 <a class="bg-primary mb-1 reference internal image-reference" href="_images/SkeletonRunningGif2.gif"><img alt="running" class="bg-primary mb-1" src="_images/SkeletonRunningGif2.gif" style="width: 150px;" /></a>
@@ -493,18 +493,15 @@ Price of nice car with 80000 miles: $96280.19
 <h2>Creating the “Person” Class<a class="headerlink" href="#creating-the-person-class" title="Permalink to this heading">#</a></h2>
 <p>Before we start building our class, it’s often helpful to think ahead about what kinds of variables we might want this class to store, and what kind of functions we expect to include in it. Take a few minutes to think about all of the variables that you might need to incorporate into your model - variables for the movement of the people, the spread of their disease, and more.</p>
 <p>We’re now going to start by making our person class with just two variables - an x coordinate and a y coordinate. Go ahead and try it, and look to the Car example if necessary to remember the syntax for creating class variables.</p>
-<div class="cell docutils container">
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
 
     <span class="c1">### YOUR CODE HERE</span>
     <span class="c1">### Modify this function and its declaration to create the variables that every &#39;person&#39; will have!</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
-        <span class="c1">### Remove &quot;pass&quot; once you have finished</span>
-        <span class="c1">#</span>
-        <span class="c1">#</span>
-        <span class="c1">#</span>
+        <span class="o">...</span>
+        
 </pre></div>
 </div>
 </div>
@@ -520,12 +517,12 @@ Price of nice car with 80000 miles: $96280.19
 </div>
 </div>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### YOUR CODE HERE</span>
 <span class="c1">### Plot the person in the X-Y plane using the function below</span>
 
-<span class="c1"># plt.scatter(REPLACE_WITH_PERSONS_X_COORDINATE, REPLACE_WITH_PERSONS_Y_COORDINATE)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">REPLACE_WITH_PERSONS_X_COORDINATE</span><span class="p">,</span> <span class="n">REPLACE_WITH_PERSONS_Y_COORDINATE</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -538,15 +535,16 @@ Price of nice car with 80000 miles: $96280.19
 </figcaption>
 </figure>
 <p>Our next step is to make 100 people using our class, and plot all of them to see our entire population at once. You should only need three lines of code to do this (don’t copy and paste the code you wrote previously 100 times!).</p>
-<p><strong>Hint</strong>: the last line should be a call to your “plt.scatter” function</p>
-<div class="cell docutils container">
+<p><strong>Hint 1</strong>: The last line should be a call to your “plt.scatter” function</p>
+<p><strong>Hint 2</strong>: To get random numbers for your x and y coordinates, use the function “np.random.random()”. It returns a random number between 0 and 1 every time it’s called</p>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create 100 people (without copy-pasting your code) and plot each of them on the same graph </span>
 
 <span class="c1">### YOUR CODE HERE</span>
-<span class="c1"># ...</span>
-<span class="c1"># ...</span>
-<span class="c1"># ...</span>
+<span class="o">...</span>
+<span class="o">...</span>
+<span class="o">...</span>
 </pre></div>
 </div>
 </div>

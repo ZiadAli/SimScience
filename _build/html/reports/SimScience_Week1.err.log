@@ -15,16 +15,19 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-class Person:
+### YOUR CODE HERE
+### Plot the person in the X-Y plane using the function below
 
-    def __init__(self):
-    # Create and initialize the variables that every 'person' will have in your simulation!
+plt.scatter(REPLACE_WITH_PERSONS_X_COORDINATE, REPLACE_WITH_PERSONS_Y_COORDINATE)
 ------------------
 
 
-[0;36m  Cell [0;32mIn[2], line 4[0;36m[0m
-[0;31m    # Create and initialize the variables that every 'person' will have in your simulation![0m
-[0m                                                                                           ^[0m
-[0;31mIndentationError[0m[0;31m:[0m expected an indented block
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[7], line 4[0m
+[1;32m      1[0m [38;5;66;03m### YOUR CODE HERE[39;00m
+[1;32m      2[0m [38;5;66;03m### Plot the person in the X-Y plane using the function below[39;00m
+[0;32m----> 4[0m plt[38;5;241m.[39mscatter([43mREPLACE_WITH_PERSONS_X_COORDINATE[49m, REPLACE_WITH_PERSONS_Y_COORDINATE)
 
+[0;31mNameError[0m: name 'REPLACE_WITH_PERSONS_X_COORDINATE' is not defined
 
